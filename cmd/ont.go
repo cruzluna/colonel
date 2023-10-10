@@ -17,9 +17,10 @@ var ontCmd = &cobra.Command{
 While working on the command-line, we always find ourselves in 
   situations where we have to open a new tab 
   and cd to the path we were working on.
+  ***If you want it to open new tab in same directory, must change iTerm2 setting***
+  ref: https://apple.stackexchange.com/a/148514
   For example:Need another tab to run npm dev while
   making changes to code.
-
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		path, err := os.Getwd()
